@@ -73,8 +73,44 @@
 
 <h2>동영상추가 : iframe</h2>
 <p>
+  삽입할 동영상 선택 후 공유선택 → 퍼가기 <br>
+  <img src="iframe.jpg" alt=""><br><br>
 <iframe width="552" height="311"
-src="https://www.youtube.com/embed/l3AdHxh9NIE" frameborder="0"
+src="https://www.youtube.com/embed/l3AdHxh9NIE"
+frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe>
+frameborder=0은 동영상 테두리를 깔끔하게 없애줌
 </p>
+
+<p>
+  <img src="iframestart.jpg" alt=""><br><br>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/l3AdHxh9NIE?start=131"
+frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe>
+<br>?start=131 : 131초부터 재생시작
+</p>
+
+<h2>댓글란 만들기</h2>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://basic-5.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
